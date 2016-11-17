@@ -49,3 +49,8 @@ class Tiles:
 
 	def shuffle(self):
 		shuffle(self.pool)
+
+	def pick(self, nbr=7):
+		picked_tiles = self.pool[:nbr]
+		del self.pool[:nbr]
+		return picked_tiles

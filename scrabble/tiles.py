@@ -45,4 +45,7 @@ class Tiles:
 						for k, v in self._letter_repartition.items()
 						for c in v
 						for _ in range(k)]
+		self.shuffle()
+
+	def shuffle(self):
 		shuffle(self.pool)
